@@ -812,7 +812,7 @@
         document.getElementById('spotlight-input').focus();
       }
     }
-    document.getElementById('spotlight-input').addEventList1ener('input', e => renderSpotlight(e.target.value));
+    document.getElementById('spotlight-input').addEventListener('input', e => renderSpotlight(e.target.value));
     function renderSpotlight(q) {
       const results = document.getElementById('spotlight-results');
       const filtered = spotlightApps.filter(a =>
